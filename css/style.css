@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.caja{
+    text-align: center;
+    position: relative;
+}
+.fondo-navidad {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1; /* La imagen está detrás del video */
+}
+
+.video-nieve {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 2; /* El video está encima de la imagen */
+}
+
+.boton {
+    position: relative;
+    z-index: 3; /* El botón está encima de todo */
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  animation: animacionBoton 2s infinite; /* Aplica la animación al botón */
+}
+
+@keyframes animacionBoton {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.btn-primary {
+    --bs-btn-color: #fff !important;
+    --bs-btn-bg: #5485cb !important;
+    --bs-btn-border-color: #4d7abb !important;
+    --bs-btn-hover-color: #fff !important;
+    box-shadow: 2px 2px 7px 0px #474545a1 !important;
+    --bs-btn-hover-bg: #5f8ed3 !important;
+    --bs-btn-hover-border-color: #598fdd !important;
+    --bs-btn-focus-shadow-rgb: 49,132,253 !important;
+    --bs-btn-active-color: #fff !important;
+    --bs-btn-active-bg: #7c9fd1 !important;
+    --bs-btn-active-border-color: #81a0cd !important;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
+    --bs-btn-disabled-color: #fff !important;
+    --bs-btn-disabled-bg: #7593bf !important;
+    --bs-btn-disabled-border-color: #7289ab !important;
+}
+
+.modal-content {
+    color: white !important;
+    background-color: #f75959e0 !important;
+}
+.modal-header{
+    margin-bottom: 0px !important;
+}
+
+.modal-footer{
+    margin-top: 0px !important;
+}
+
+:root{
+    --bs-border-width: 0px;
+}
