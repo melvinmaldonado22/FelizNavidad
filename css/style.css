@@ -21,7 +21,7 @@ body {
 .video-nieve {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     object-fit: cover;
     z-index: 2; /* El video está encima de la imagen */
 }
